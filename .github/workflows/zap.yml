@@ -1,5 +1,5 @@
 name: zapfull-security-scan
-on: [push]
+on: [push,workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
