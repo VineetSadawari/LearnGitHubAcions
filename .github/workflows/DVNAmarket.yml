@@ -16,7 +16,7 @@ jobs:
         uses: jakejarvis/wait-action@master
         with:
           time: '20s'
-      - name: OWASP ZAP Full Scan
-        uses: zaproxy/action-full-scan@v0.1.0
+      - name: OWASP ZAP Base Scan
+        uses: zaproxy/action-baseline@v0.6.1
         with:
          target: "http://testphp.vulnweb.com/"
